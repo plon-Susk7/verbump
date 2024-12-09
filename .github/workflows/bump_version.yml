@@ -18,8 +18,6 @@ jobs:
       - name: Get changed files
         id: files
         uses: jitterbit/get-changed-files@v1
-        with:
-          format: 'json'
 
       - name: Get latest commit message
         run: echo "COMMIT_MESSAGE=${{ github.event.commits[0].message }}" 
