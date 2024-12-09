@@ -5,7 +5,7 @@ on: [push]
 jobs:
   Bump-Package-Version:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Get changed files
         id: files
@@ -14,16 +14,21 @@ jobs:
           format: 'json'
 
       - name: Get latest commit message
-        run: echo "${{ github.event.commits[0].message }} is the commit message!"
+        run: echo "COMMIT_MESSAGE=${{ github.event.commits[0].message }}" >> $GITHUB_ENV
+
+      - name: Parse changed files
+        id: process_files
+        run: |
+          # Parse the changed files from the JSON output
+          CHANGED_FILES=$(echo "${{ steps.files.outputs.all }}" | jq -r '.[]' | tr '\n' ' ')
+          echo "CHANGED_FILES=$CHANGED_FILES" >> $GITHUB_ENV
 
       - name: Print changed files
         run: |
-          for changed_file in ${{ steps.files.outputs.all }}; do
+          for changed_file in ${{ env.CHANGED_FILES }}; do
             echo "Do something with this ${changed_file}."
           done
-        
-      -name: Run python script
-        run: |
-          # Run python script now!
-          python3 bump_version.py ${{ github.event.commits[0].message }} ${{ steps.files.outputs.all }}
 
+      - name: Run python script
+        run: |
+          python3 bump_version.py "${{ env.COMMIT_MESSAGE }}" "${{ env.CHANGED_FILES }}"
