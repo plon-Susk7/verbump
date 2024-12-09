@@ -24,12 +24,8 @@ jobs:
       - name: Get latest commit message
         run: echo "COMMIT_MESSAGE=${{ github.event.commits[0].message }}" 
 
-      - name: Print changed files
-        run: |
-          for changed_file in ${{ steps.files.outputs.all }}; do
-            echo "Do something with this ${changed_file}."
-          done 
-
       - name: Run python script
         run: |
-          python3 .github/workflows/bump_version.py "${{ github.event.commits[0].message }}" "${{ steps.file.outputs.all }}"
+          for changed_file in ${{ steps.files.outputs.all }}; do
+            python3 .github/workflows/bump_version.py "${{ github.event.commits[0].message }}" "${{ changed_file }}"
+          done 
