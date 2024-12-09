@@ -7,8 +7,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
-      # Step 2: Get changed files
       - name: Get changed files
         id: files
         uses: jitterbit/get-changed-files@v1
