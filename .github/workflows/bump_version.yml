@@ -32,4 +32,4 @@ jobs:
 
       - name: Run python script
         run: |
-          python3 .github/workflows/bump_version.py "${{ github.even.commits[0].message }}" "${{ steps.file.outputs.all }}"
+          python3 .github/workflows/bump_version.py ${{ github.even.commits[0].message }} ${{ steps.file.outputs.all }}
