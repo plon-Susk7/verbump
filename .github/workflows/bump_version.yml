@@ -6,4 +6,4 @@ jobs:
   Bump-Package-Version:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "{{github.commits[0].message}} is the commit message!"
+      - run: echo "${{github.commits[0].message}} is the commit message!"
