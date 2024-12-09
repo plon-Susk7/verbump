@@ -25,5 +25,5 @@ jobs:
           done
 
           # Run python script now!
-          python3 .github/scripts/bump_version.py ${{ github.event.commits[0].message }} ${{ steps.files.outputs.all }}
+          python3 bump_version.py ${{ github.event.commits[0].message }} ${{ steps.files.outputs.all }}
 
