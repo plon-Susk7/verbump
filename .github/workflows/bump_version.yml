@@ -23,7 +23,4 @@ jobs:
         run: echo "COMMIT_MESSAGE=${{ github.event.commits[0].message }}" 
 
       - name: Run python script
-        run: |
-          for changed_file in ${{ steps.files.outputs.all }}; do
-            python3 .github/workflows/bump_version.py "${{ github.event.commits[0].message }}" "${{ steps.files.outputs.all }}"
-          done 
+        run: python3 .github/workflows/bump_version.py "${{ github.event.commits[0].message }}" "${{ steps.files.outputs.all }}"
