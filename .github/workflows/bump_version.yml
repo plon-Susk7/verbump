@@ -5,7 +5,7 @@ on: [push]
 jobs:
   Bump-Package-Version:
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: Get changed files
         id: files
