@@ -5,5 +5,14 @@ on: [push]
 jobs:
   Bump-Package-Version:
     runs-on: ubuntu-latest
+    id: files
+    uses: jitterbit/get-changed-files@v1
+    with:
+      format: 'py'
     steps:
       - run: echo "${{github.event.commits[0].message}} is the commit message!"
+      - run: |
+          for changed_file in ${{ steps.files.outputs.files }}; do
+            echo "Changed file: $changed_file"
+          done
+
