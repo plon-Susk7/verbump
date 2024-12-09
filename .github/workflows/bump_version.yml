@@ -20,17 +20,15 @@ jobs:
         uses: jitterbit/get-changed-files@v1
         with:
           format: 'json'
-        run : |
-          echo "Changed files: ${{ steps.files.outputs.all }}"
 
       - name: Get latest commit message
         run: echo "COMMIT_MESSAGE=${{ github.event.commits[0].message }}" 
 
       - name: Print changed files
         run: |
-          for changed_file in ${{steps.file.outputs.all}}; do
-            echo "Changed file: ${changed_file}."
-          done
+          for changed_file in ${{ steps.files.outputs.all }}; do
+            echo "Do something with this ${changed_file}."
+          done 
 
       - name: Run python script
         run: |
