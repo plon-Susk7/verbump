@@ -15,19 +15,16 @@ jobs:
         with:
           format: 'json'
 
-      # Step 3: Get latest commit message
       - name: Get latest commit message
-        run: echo "COMMIT_MESSAGE=${{ github.event.commits[0].message }}" >> $GITHUB_ENV
+        run: echo "${{ github.event.commits[0].message }} is the commit message!"
 
-      # Step 4: Format and process changed files
-      - name: Process changed files
-        id: process_files
+      - name: Print changed files
         run: |
-          # Extract changed files from JSON output
-          CHANGED_FILES=$(echo "${{ steps.files.outputs.all }}" | jq -r '.[]' | tr '\n' ' ')
-          echo "CHANGED_FILES=$CHANGED_FILES" >> $GITHUB_ENV
+          for changed_file in ${{ steps.files.outputs.all }}; do
+            echo "Do something with this ${changed_file}."
+          done
+      -name: Run python script
+        run: |
+          # Run python script now!
+          python3 bump_version.py ${{ github.event.commits[0].message }} ${{ steps.files.outputs.all }}
 
-      # Step 5: Run Python script with commit message and changed files
-      - name: Run Python script
-        run: |
-          python3 bump_version.py "${{ env.COMMIT_MESSAGE }}" "${{ env.CHANGED_FILES }}"
