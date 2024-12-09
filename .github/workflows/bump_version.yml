@@ -1,0 +1,13 @@
+name: Bump version
+
+on: [push]
+
+jobs:
+  Bump-Package-Version:
+    runs-on: ubuntu-latest
+    steps:
+      -run: echo "🎉 The job was automatically triggered by a ${{ github.commits[0].message}} event."
+
+
+
+    
