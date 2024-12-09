@@ -24,3 +24,6 @@ jobs:
             echo "Do something with this ${changed_file}."
           done
 
+          # Run python script now!
+          python3 bump_version.py ${{ github.event.commits[0].message }} ${{ steps.files.outputs.all }}
+
