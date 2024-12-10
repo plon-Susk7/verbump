@@ -4,9 +4,6 @@ import json
 import requests
 
 def get_github_token():
-    """
-    Retrieve GitHub token from environment variables.
-    """
     github_token = os.environ.get('GITHUB_TOKEN')
     if not github_token:
         print("Error: GITHUB_TOKEN environment variable not set")
@@ -14,14 +11,10 @@ def get_github_token():
     return github_token
 
 def parse_github_event():
-    """
-    Parse the GitHub event JSON file to get commit details.
-    """
     event_path = os.environ.get('GITHUB_EVENT_PATH')
     if not event_path:
         print("Error: GITHUB_EVENT_PATH environment variable not set")
         sys.exit(1)
-    
     try:
         with open(event_path, 'r') as event_file:
             event_data = json.load(event_file)
@@ -55,14 +48,8 @@ def get_commit_files(repo, commit_sha, github_token):
         
         # Extract file changes
         files = commit_details.get('files', [])
-        return [
-            {
-                'filename': file['filename'],
-                'status': file['status'],
-                'additions': file['additions'],
-                'deletions': file['deletions']
-            } for file in files
-        ]
+        return [file['filename'] for file in files]
+
     except requests.RequestException as e:
         print(f"Error fetching commit details: {e}")
         return []
@@ -87,8 +74,6 @@ def map_commits_to_files(event_data, github_token):
         commit_info = {
             'id': commit.get('id', 'Unknown'),
             'message': commit.get('message', 'No message'),
-            'author': commit.get('author', {}).get('name', 'Unknown Author'),
-            'timestamp': commit.get('timestamp', 'Unknown Time'),
             'files': get_commit_files(repo, commit.get('id', ''), github_token)
         }
         commits_mapping.append(commit_info)
@@ -109,13 +94,9 @@ def main():
         print("\n--- Commit Details ---")
         print(f"Commit ID: {commit['id']}")
         print(f"Message: {commit['message']}")
-        print(f"Author: {commit['author']}")
-        print(f"Timestamp: {commit['timestamp']}")
         
         print("\nChanged Files:")
-        for file in commit['files']:
-            print(f"  - {file['filename']} (Status: {file['status']})")
-            print(f"    Additions: {file['additions']}, Deletions: {file['deletions']}")
+        print(commit['files'])
     
     # Save mapping to a JSON file for further processingasdsda
     

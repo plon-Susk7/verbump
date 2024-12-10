@@ -21,4 +21,4 @@ class Calculator:
     def power(self)->int:
         return self.a ** self.b
 
-#More chnages to be made!s
+#More chnages to be mad
