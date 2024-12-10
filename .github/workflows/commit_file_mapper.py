@@ -117,7 +117,7 @@ def main():
             print(f"  - {file['filename']} (Status: {file['status']})")
             print(f"    Additions: {file['additions']}, Deletions: {file['deletions']}")
     
-    # Save mapping to a JSON file for further processing
+    # Save mapping to a JSON file for further processingasdsda
     
 
 if __name__ == "__main__":
