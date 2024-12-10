@@ -13,15 +13,6 @@ def get_github_token():
     return github_token
 
 def run_command(command):
-    """
-    Run a shell command and return its output.
-    
-    Args:
-        command (list): Command to run as a list of strings
-    
-    Returns:
-        tuple: (return_code, stdout, stderr)
-    """
     try:
         result = subprocess.run(command, capture_output=True, text=True, check=False)
         return result.returncode, result.stdout, result.stderr
@@ -43,15 +34,9 @@ def parse_github_event():
         sys.exit(1)
 
 def get_commit_files(repo, commit_sha, github_token):
-    """
-    Retrieve files changed in a specific commit using GitHub API.
-    
-    Returns:
-        list: Files changed in the commit
-    """
     url = f"https://api.github.com/repos/{repo}/commits/{commit_sha}"
     headers = {
-        'Authorization': f'token {github_token}',
+        'Authorization': f'Bearer {github_token}',
         'Accept': 'application/vnd.github.v3+json'
     }
     
@@ -59,8 +44,7 @@ def get_commit_files(repo, commit_sha, github_token):
         response = requests.get(url, headers=headers)
         response.raise_for_status()
         commit_details = response.json()
-        
-        # Extract file changes
+
         files = commit_details.get('files', [])
         return [file['filename'] for file in files]
 
@@ -69,18 +53,14 @@ def get_commit_files(repo, commit_sha, github_token):
         return []
 
 def map_commits_to_files(event_data, github_token):
-    """
-    Create a detailed mapping of commits to their specific changed files.
-    """
-    # Extract repository information
+
     repo = os.environ.get('GITHUB_REPOSITORY')
     if not repo:
         print("Error: GITHUB_REPOSITORY environment variable not set")
         sys.exit(1)
     
     commits_mapping = []
-    
-    # Handle push event commits
+
     for commit in event_data.get('commits', []):
         commit_info = {
             'id': commit.get('id', 'Unknown'),
@@ -92,45 +72,32 @@ def map_commits_to_files(event_data, github_token):
     return commits_mapping
 
 def change_toml_version(commit_message, changed_files):
-    """
-    Change version in pyproject.toml and prepare for commit.
-    
-    Returns:
-        tuple: (path_to_updated_toml, new_version)
-    """
     commit_type = commit_message.split(':')[0].strip()
     
     for changed_file in changed_files:
-        # Construct potential pyproject.toml path
         path_parts = changed_file.split('/')
         final_path = '/'.join(path_parts[0:-1]) + '/pyproject.toml'
         
-        # Check if pyproject.toml exists
         if os.path.exists(final_path):
-            # Load existing toml
             with open(final_path, 'r') as file:
                 data = toml.load(file)
             
-            # Get current version
             current_version = data['project']['version']
             version_split = current_version.split('.')
             
-            # Bump version based on commit type
-            if commit_type == 'feat':
+            if commit_type == 'feat' or commit_type == 'breaking' or commit_type == 'major':
                 version_split[0] = str(int(version_split[0]) + 1)
                 version_split[1] = '0'
                 version_split[2] = '0'
-            elif commit_type == 'fix':
+            elif commit_type == 'fix' or commit_type == 'patch':
                 version_split[1] = str(int(version_split[1]) + 1)
                 version_split[2] = '0'
-            elif commit_type == 'chore':
+            elif commit_type == 'chore' or commit_type == 'refactor':
                 version_split[2] = str(int(version_split[2]) + 1)
             
-            # Update version
             new_version = '.'.join(version_split)
             data['project']['version'] = new_version
-            
-            # Write back to file
+
             with open(final_path, 'w') as file:
                 toml.dump(data, file)
             
@@ -180,25 +147,19 @@ def commit_and_push_changes(toml_path, new_version):
     print(f"Successfully bumped version to {new_version}")
 
 def main():
-    # Get GitHub token and event data
     github_token = get_github_token()
     event_data = parse_github_event()
-    
-    # Map commits to their specific files
+
     commits_file_mapping = map_commits_to_files(event_data, github_token)
-    
-    # Configure git for committing
+
     configure_git()
-    
-    # Process each commit
+
     for commit in commits_file_mapping:
         commit_message = commit['message']
         changed_files = commit['files']
         
-        # Change version in pyproject.toml
         toml_path, new_version = change_toml_version(commit_message, changed_files)
-        
-        # Commit and push changes
+
         if toml_path and new_version:
             commit_and_push_changes(toml_path, new_version)
 
