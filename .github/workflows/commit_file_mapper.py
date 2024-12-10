@@ -2,6 +2,7 @@ import os
 import sys
 import json
 import requests
+import toml
 
 def get_github_token():
     github_token = os.environ.get('GITHUB_TOKEN')
@@ -80,6 +81,35 @@ def map_commits_to_files(event_data, github_token):
     
     return commits_mapping
 
+def change_toml_version(commit_message, changed_files):
+    commit_type = commit_message.split(':')[0].strip()
+    for changed_file in changed_files:
+        splitting_paths = changed_file.split('/')
+        final_path = '/'.join(splitting_paths[0:-1]) + '/pyproject.toml'
+        print(final_path)
+        if os.path.exists(final_path):
+            with open(final_path,'r') as file:
+                data = toml.load(file)
+                
+                if commit_type == 'feat':
+                    version = data['project']['version']
+                    version_split = version.split('.')
+                    version_split[0] = str(int(version_split[0]) + 1)
+                    data['project']['version'] = '.'.join(version_split)
+                elif commit_type == 'fix':
+                    version = data['project']['version']
+                    version_split = version.split('.')
+                    version_split[1] = str(int(version_split[1]) + 1)
+                    data['project']['version'] = '.'.join(version_split)
+                elif commit_type == 'chore':
+                    version = data['project']['version']
+                    version_split = version.split('.')
+                    version_split[2] = str(int(version_split[2]) + 1)
+                    data['project']['version'] = '.'.join(version_split)
+            
+            with open(final_path, 'w') as file:
+                toml.dump(data, file)
+
 def main():
     # Get GitHub token and event data
     github_token = get_github_token()
@@ -89,16 +119,21 @@ def main():
     commits_file_mapping = map_commits_to_files(event_data, github_token)
     
     # Print detailed mapping
-    print("Detailed Commit-to-File Mapping:")
-    for commit in commits_file_mapping:
-        print("\n--- Commit Details ---")
-        print(f"Commit ID: {commit['id']}")
-        print(f"Message: {commit['message']}")
+    # print("Detailed Commit-to-File Mapping:")
+    # for commit in commits_file_mapping:
+    #     print("\n--- Commit Details ---")
+    #     print(f"Commit ID: {commit['id']}")
+    #     print(f"Message: {commit['message']}")
         
-        print("\nChanged Files:")
-        print(commit['files'])
+    #     print("\nChanged Files:")
+    #     print(commit['files'])
     
-    # Save mapping to a JSON file for further processingasdsda
+    # Extract commit message and changed files
+    for commit in commits_file_mapping:
+        commit_message = commit['message']
+        changed_files = commit['files']
+        change_toml_version(commit_message, changed_files)
+    
     
 
 if __name__ == "__main__":
