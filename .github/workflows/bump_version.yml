@@ -21,10 +21,8 @@ jobs:
       
       - name: Get all commit messages
         id: all_commit_messages
-        run: |
-          echo "ALL_COMMIT_MESSAGES=$(jq -c '[.commits[].message]' <<< '${{ toJson(github.event.commits) }}')" >> $GITHUB_ENV
-        shell: bash
-        
+        run: echo "ALL_COMMIT_MESSAGES=${{ toJSON(github.event.commits)}}"
+
       - name: Get changed files
         id: files
         uses: jitterbit/get-changed-files@v1
