@@ -62,16 +62,16 @@ jobs:
       - name: Get commit messages and files changed
         id: commit_files_map
         run: |
-          echo "COMMIT_FILES_MAP=$(jq -n --argjson commits "${{ toJson(github.event.commits) }}" '
-            $commits | map({message: .message, files: .added + .modified + .removed})')" >> $GITHUB_ENV
+          echo ${{ toJson(github.event.commits) }} 
+        
 
-      - name: Display commit-to-file mapping
-        run: echo "$COMMIT_FILES_MAP"
+      # - name: Display commit-to-file mapping
+      #   run: echo "$COMMIT_FILES_MAP"
 
-      - name: Set up Python dependencies
-        run: |
-          python3 -m pip install --upgrade pip
-          python3 -m pip install toml
+      # - name: Set up Python dependencies
+      #   run: |
+      #     python3 -m pip install --upgrade pip
+      #     python3 -m pip install toml
 
-      - name: Run Python script with mapping
-        run: python3 .github/workflows/bump_version.py "$COMMIT_FILES_MAP"
+      # - name: Run Python script with mapping
+      #   run: python3 .github/workflows/bump_version.py "$COMMIT_FILES_MAP"
