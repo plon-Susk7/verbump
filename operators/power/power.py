@@ -14,4 +14,4 @@ class Power:
     def __repr__(self):
         return str(self.power())
 
-# Slight changes here and there!
+# Slight changes!

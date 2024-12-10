@@ -14,3 +14,5 @@ class Modulator:
 
     def pm_modulate(self)->np.ndarray:
         return np.cos(self.signal + self.carrier)
+
+## Modulator class ends here
