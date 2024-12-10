@@ -62,7 +62,7 @@ jobs:
       - name: Get commit messages and files changed
         id: commit_files_map
         run: |
-          echo ${{ toJson(github.event.commits) }} 
+          echo '${{ toJson(github.event.commits) }}'
         
 
       # - name: Display commit-to-file mapping
