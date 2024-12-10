@@ -128,7 +128,7 @@ def main():
     #     print("\nChanged Files:")
     #     print(commit['files'])
     
-    # Extract commit message and changed files
+    # Extract commit message and changed files 
     for commit in commits_file_mapping:
         commit_message = commit['message']
         changed_files = commit['files']
@@ -138,3 +138,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+#minor commit changes tracker!
