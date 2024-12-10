@@ -19,16 +19,16 @@ jobs:
         with:
           python-version: '3.x'
       
-      - name: Get all commit messages
-        id: all_commit_messages
-        run: echo "ALL_COMMIT_MESSAGES=${{ join(github.event.commits[*].message,',') }}"
+      # - name: Get all commit messages
+      #   id: all_commit_messages
+      #   run: echo "ALL_COMMIT_MESSAGES=${{ join(github.event.commits[*].message,',') }}"
 
-      - name: Get changed files
-        id: files
-        uses: jitterbit/get-changed-files@v1
+      # - name: Get changed files
+      #   id: files
+      #   uses: jitterbit/get-changed-files@v1
 
-      - name: Display all files changed
-        run: echo "${{ steps.files.outputs.all }}"
+      # - name: Display all files changed
+      #   run: echo "${{ steps.files.outputs.all }}"
       
       - name: Set up python dependecnies
         run: |
@@ -36,4 +36,5 @@ jobs:
           python3 -m pip install toml
 
       - name: Run python script
-        run: python3 .github/workflows/bump_version.py "${{ join(github.event.commits[*].message,',') }}" "${{ steps.files.outputs.all }}"
+        # run: python3 .github/workflows/bump_version.py "${{ join(github.event.commits[*].message,',') }}" "${{ steps.files.outputs.all }}"
+        run : python3 .github/workflows/bump_version.py "${{git log --name-only --pretty=format:"%s"}}"
