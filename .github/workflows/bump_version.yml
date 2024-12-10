@@ -29,6 +29,11 @@ jobs:
 
       - name: Display all files changed
         run: echo "${{ steps.files.outputs.all }}"
+      
+      - name: Set up python dependecnies
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install toml
 
       - name: Run python script
         run: python3 .github/workflows/bump_version.py "${{ toJSON(github.event.commits[*].message) }}" "${{ steps.files.outputs.all }}"
