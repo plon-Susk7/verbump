@@ -21,7 +21,7 @@ jobs:
       
       - name: Get all commit messages
         id: all_commit_messages
-        run: echo "ALL_COMMIT_MESSAGES=${{ toJSON(github.event.commits[*].message) }}"
+        run: echo "ALL_COMMIT_MESSAGES=${{ join(github.event.commits[*].message,',') }}"
 
       - name: Get changed files
         id: files
