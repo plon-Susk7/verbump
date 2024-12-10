@@ -38,7 +38,7 @@
 #       - name: Run python script
 #         run: python3 .github/workflows/bump_version.py "${{ join(github.event.commits[*].message,',') }}" "${{ steps.files.outputs.all }}"
 
-name: Bump version
+name: Commit File Mapper
 
 on:
   push:
@@ -47,31 +47,19 @@ on:
       - development
 
 jobs:
-  Bump-Package-Version:
+  Map-Commits-And-Files:
     runs-on: ubuntu-latest
 
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-
-      - name: Get commit messages and files changed
-        id: commit_files_map
-        run: |
-          echo '${{ toJson(github.event.commits) }}'
-        
-
-      # - name: Display commit-to-file mapping
-      #   run: echo "$COMMIT_FILES_MAP"
-
-      # - name: Set up Python dependencies
-      #   run: |
-      #     python3 -m pip install --upgrade pip
-      #     python3 -m pip install toml
-
-      # - name: Run Python script with mapping
-      #   run: python3 .github/workflows/bump_version.py "$COMMIT_FILES_MAP"
+      
+      - name: Run commit file mapping script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/workflows/commit_file_mapper.py
