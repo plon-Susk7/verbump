@@ -1,6 +1,10 @@
 name: Bump version
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+      - development
 
 jobs:
   Bump-Package-Version:
@@ -14,13 +18,17 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
+      
+      - name: Get all commit messages
+        id: all_commit_messages
+        run: echo "ALL_COMMIT_MESSAGES=${{ github.event.commits[*].message }}"
 
       - name: Get changed files
         id: files
         uses: jitterbit/get-changed-files@v1
 
-      - name: Get latest commit message
-        run: echo "COMMIT_MESSAGE=${{ github.event.commits[0].message }}" 
+      - name: Display all files changed
+        run: echo "${{ steps.files.outputs.all }}"
 
-      - name: Run python script
-        run: python3 .github/workflows/bump_version.py "${{ github.event.commits[0].message }}" "${{ steps.files.outputs.all }}"
+      # - name: Run python script
+      #   run: python3 .github/workflows/bump_version.py "${{ github.event.commits[0].message }}" "${{ steps.files.outputs.all }}"
