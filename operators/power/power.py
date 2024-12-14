@@ -15,3 +15,4 @@ class Power:
         return str(self.power())
 
 # Slight changesasdsdasdsadasd asdasd
+# I need to make a major change!

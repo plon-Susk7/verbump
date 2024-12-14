@@ -16,3 +16,4 @@ class Modulator:
         return np.cos(self.signal + self.carrier)
 
 ## Modulator is useless without aasdsadas
+# Need to make a major change!
