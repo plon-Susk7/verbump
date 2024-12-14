@@ -29,24 +29,27 @@ jobs:
           pip install python-semantic-release
 
       - name: Debug version bump in main project
-        with:
+        uses: python-semantic-release
+        working-directory: ./
+        env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          directory : ./
         run: |
           semantic-release version 
 
       - name: Bump version in operator1 project
-        with:
+        uses: python-semantic-release
+        working-directory: ./operators/modulator
+        env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          directory : ./operators/modulator
         run: |
           semantic-release version
           cat pyproject.toml
 
       - name: Bump version in operator2 project
-        with:
+        uses: python-semantic-release
+        working-directory: ./operators/power
+        env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          directory : ./operators/power
         run: |
           semantic-release version
           cat pyproject.toml
