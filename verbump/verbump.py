@@ -21,4 +21,7 @@ class Calculator:
     def power(self)->int:
         return self.a ** self.b
 
+    def __str__(self):
+        return str(self.power())
+
 #More chnages to be mad lil bit 
