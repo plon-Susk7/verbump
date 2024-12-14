@@ -40,7 +40,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          semantic-release version --force
+          semantic-release version
           cat pyproject.toml
 
       - name: Bump version in operator2 project
@@ -48,7 +48,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          semantic-release version --force
+          semantic-release version
           cat pyproject.toml
 
       - name: Commit and push changes
