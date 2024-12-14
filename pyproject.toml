@@ -22,5 +22,8 @@ members = ["operators/modulator", "operators/power"]
 [tool.semantic_release]
 version_variable = "pyproject.toml:version"
 
+[tool.semantic_release.branches.main]
+match = "main"
+
 [tool.hatch.build.targets.wheel]
 packages = ["verbump"]
