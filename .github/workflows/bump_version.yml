@@ -33,7 +33,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          semantic-release version --force
+          semantic-release version 
 
       - name: Bump version in operator1 project
         working-directory: ./operators/modulator
