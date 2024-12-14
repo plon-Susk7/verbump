@@ -58,5 +58,3 @@ jobs:
           git add .
           git commit -m "chore: bump project versions" || exit 0
           git push
-
-# minor change
