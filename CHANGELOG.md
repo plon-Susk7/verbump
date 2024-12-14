@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.3.6 (2024-12-14)
+
+### Bug Fixes
+
+- Bugs fixed
+  ([`e7e602f`](https://github.com/plon-Susk7/verbump/commit/e7e602fc9d807cd4b591337e1a8d96ddcaa0762b))
+
+
 ## v0.3.5 (2024-12-14)
 
 
