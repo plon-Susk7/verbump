@@ -29,6 +29,7 @@ jobs:
           pip install python-semantic-release
 
       - name: Debug version bump in main project
+        working-directory: ./
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
