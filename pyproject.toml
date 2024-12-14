@@ -28,3 +28,6 @@ version_variable = ["pyproject.toml:project.version"]
 [tool.semantic_release.branches.main]
 match = "main"
 prerelease = false
+
+
+# moving towards major version update!
