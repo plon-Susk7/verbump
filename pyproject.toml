@@ -23,7 +23,7 @@ packages = ["verbump"]
 members = ["operators/modulator", "operators/power"]
 
 [tool.semantic_release]
-version_variable = ["pyproject.toml:project.version"]
+version_toml = ["pyproject.toml:project.version"]
 branch = "main"
 
 [tool.semantic_release.branches.main]
