@@ -27,14 +27,12 @@ jobs:
       - name: Install semantic-release
         run: |
           pip install python-semantic-release
-
       - name: Debug version bump in main project
         working-directory: ./
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           semantic-release -vv version 
-
       - name: Bump version in operator1 project
         working-directory: ./operators/modulator
         env:
@@ -42,7 +40,6 @@ jobs:
         run: |
           semantic-release version 
           cat pyproject.toml
-
       - name: Bump version in operator2 project
         working-directory: ./operators/power
         env:
@@ -50,11 +47,10 @@ jobs:
         run: |
           semantic-release version 
           cat pyproject.toml
-
       - name: Commit and push changes
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add .
           git commit -m "chore: bump project versions" || exit 0
-          git push
+          git push https://github.com/${{ github.repository }}.git HEAD:${{ github.ref }} --token ${{ secrets.GITHUB_TOKEN }}
