@@ -14,13 +14,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        uses: actions/checkout@v4.1.1
         with:
           fetch-depth: 0
           persist-credentials: false
 
       - name: Setup Python version
-        uses: actions/setup-python@0a5c61591373683505ea898e09a3ea4f39ef2b9c # v5.0.0
+        uses: actions/setup-python@v5.0.0
         with:
           python-version: '3.11'
 
@@ -28,19 +28,19 @@ jobs:
         run: |
           pip install python-semantic-release
 
-      - name: Bump version in main project
+      - name: Debug version bump in main project
         working-directory: ./
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          semantic-release version
+          semantic-release version --debug
 
       - name: Bump version in operator1 project
         working-directory: ./operators/modulator
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          semantic-release version
+          semantic-release version --force
           cat pyproject.toml
 
       - name: Bump version in operator2 project
@@ -48,7 +48,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          semantic-release version
+          semantic-release version --force
           cat pyproject.toml
 
       - name: Commit and push changes
