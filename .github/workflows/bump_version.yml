@@ -30,17 +30,23 @@ jobs:
 
       - name: Bump version in main project
         working-directory: ./verbump
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           semantic-release version
 
       - name: Bump version in operator1 project
         working-directory: ./operators/modulator
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           semantic-release version
           cat pyproject.toml
 
       - name: Bump version in operator2 project
         working-directory: ./operators/power
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           semantic-release version
           cat pyproject.toml

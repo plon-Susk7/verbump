@@ -9,6 +9,12 @@ dependencies = []
 name = "priyash7"
 email = "priyashshah4@gmail.com"
 
+[tool.semantic_release]
+version_variable = "pyproject.toml:version"
+branch = "main"  # or "development" depending on the branch
+commit_subject = "chore: release {version}"
+build_command = "pip install build && python -m build"
+
 [build-system]
 requires = [ "hatchling",]
 build-backend = "hatchling.build"
