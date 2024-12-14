@@ -1,6 +1,9 @@
 # CHANGELOG
 
 
+## v0.3.0 (2024-12-14)
+
+
 ## v0.2.0 (2024-12-14)
 
 ### Chores
@@ -9,6 +12,9 @@
   ([`438d3e0`](https://github.com/plon-Susk7/verbump/commit/438d3e0f376af3cb605c0c2f7919bc6e790881f0))
 
 ### Features
+
+- Added new feature
+  ([`92829c6`](https://github.com/plon-Susk7/verbump/commit/92829c67bbd7197cd76c12e26c05871bf1f16992))
 
 - Added new feature
   ([`ed8f21a`](https://github.com/plon-Susk7/verbump/commit/ed8f21ae54769f5aa168be76d482e501da0543de))
