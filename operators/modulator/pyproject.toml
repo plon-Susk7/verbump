@@ -11,9 +11,7 @@ email = "priyashshah4@gmail.com"
 
 [tool.semantic_release]
 version_variable = "pyproject.toml:version"
-branch = "main"
-commit_subject = "chore: release {version}"
-build_command = "pip install build && python -m build"
+bump_version = true
 
 [build-system]
 requires = [ "hatchling",]
