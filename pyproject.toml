@@ -22,11 +22,6 @@ packages = ["verbump"]
 [tool.uv.workspace]
 members = ["operators/modulator", "operators/power"]
 
-[tool.semantic_release]
-version_variable = ["pyproject.toml:project.version"]
-version_toml = ["pyproject.toml:project.version"]
-branch = "main"
-build_command = "python -m pip install build && python -m build"
 
 [tool.semantic_release.branches.main]
 match = "main"
