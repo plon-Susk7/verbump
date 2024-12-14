@@ -28,7 +28,7 @@ jobs:
         run: |
           pip install python-semantic-release
       - name: Debug version bump in main project
-        working-directory: ./
+        working-directory: ./verbump
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
