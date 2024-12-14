@@ -20,10 +20,12 @@ build-backend = "hatchling.build"
 members = ["operators/modulator", "operators/power"]
 
 [tool.semantic_release]
-version_variable = "pyproject.toml:version"
+version_variable = ["pyproject.toml:project.version"]
+version_toml = ["pyproject.toml:project.version"]
 
 [tool.semantic_release.branches.main]
 match = "main"
+prerelease = false
 
 [tool.hatch.build.targets.wheel]
 packages = ["verbump"]
