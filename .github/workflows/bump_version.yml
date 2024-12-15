@@ -28,46 +28,26 @@ jobs:
         run: |
           pip install python-semantic-release
 
-      # - name: Release main project
-      #   env:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #   run: |
-      #     cd ./verbump
-      #     semantic-release version
 
-      - name: Release modulator
+      - name: Debug version bump in main project
+        working-directory: ./
         env:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          cd ./operators/modulator
-          semantic-release version
+          semantic-release -vv version 
 
-      - name: Release main power
+      - name: Bump version in operator1 project
+        working-directory: ./operators/modulator
         env:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          cd ./operators/power
-          semantic-release version
+          semantic-release version 
+          cat pyproject.toml
 
-      # - name: Debug version bump in main project
-      #   working-directory: ./
-      #   env:
-      #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   run: |
-      #     semantic-release -vv version 
-
-      # - name: Bump version in operator1 project
-      #   working-directory: ./operators/modulator
-      #   env:
-      #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   run: |
-      #     semantic-release version 
-      #     cat pyproject.toml
-
-      # - name: Bump version in operator2 project
-      #   working-directory: ./operators/power
-      #   env:
-      #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   run: |
-      #     semantic-release version 
-      #     cat pyproject.toml
+      - name: Bump version in operator2 project
+        working-directory: ./operators/power
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          semantic-release version 
+          cat pyproject.toml
