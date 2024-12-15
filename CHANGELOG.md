@@ -1,103 +1,30 @@
 # CHANGELOG
 
 
-## v0.3.16 (2024-12-15)
-
-### Bug Fixes
-
-- Fixed
-  ([`668570f`](https://github.com/plon-Susk7/verbump/commit/668570f4d8540ebbe898eb58d0fca0243a20783a))
-
-- Power fixed
-  ([`e5b80a4`](https://github.com/plon-Susk7/verbump/commit/e5b80a4f029e86f54f45dc8998349667a5116436))
-
-
-## v0.3.15 (2024-12-15)
-
-### Bug Fixes
-
-- Changes to mod
-  ([`35e39cb`](https://github.com/plon-Susk7/verbump/commit/35e39cb0d534bf5923c01e0d6c210ae3bab2c09b))
-
-
-## v0.3.14 (2024-12-15)
-
-### Bug Fixes
-
-- Changed logic for running power
-  ([`8fb9e39`](https://github.com/plon-Susk7/verbump/commit/8fb9e39d3a15e5b63f22791de9775a06445cb5d5))
-
-
-## v0.3.13 (2024-12-15)
-
-### Bug Fixes
-
-- Fixed workflow
-  ([`20af5a4`](https://github.com/plon-Susk7/verbump/commit/20af5a491f26152a037bec463ac6cefd6fec8e20))
-
-
-## v0.3.12 (2024-12-14)
+## v0.1.0 (2024-12-15)
 
 ### Bug Fixes
 
 - Bugs fixed
   ([`98fbc95`](https://github.com/plon-Susk7/verbump/commit/98fbc95881ab543d94355eb0d6198baca9d25bc7))
 
-
-## v0.3.11 (2024-12-14)
-
-### Bug Fixes
-
 - Bugs fixed
   ([`9093fd2`](https://github.com/plon-Susk7/verbump/commit/9093fd230d9e04430843e6ec4de1ded6d813b511))
-
-
-## v0.3.10 (2024-12-14)
-
-### Bug Fixes
 
 - Bugs fixed
   ([`0c2f8bb`](https://github.com/plon-Susk7/verbump/commit/0c2f8bb9388fec29cf530d195f8c373aacc3b79c))
 
-
-## v0.3.9 (2024-12-14)
-
-### Bug Fixes
-
 - Bugs fixed
   ([`2b21c7b`](https://github.com/plon-Susk7/verbump/commit/2b21c7bb0c917d46425257abbad71e636e5ae81d))
-
-
-## v0.3.8 (2024-12-14)
-
-### Bug Fixes
 
 - Bugs fixed
   ([`eb359f0`](https://github.com/plon-Susk7/verbump/commit/eb359f0df59e40bb870a132ebbb7aa4fef978b08))
 
-
-## v0.3.7 (2024-12-14)
-
-### Bug Fixes
-
 - Bugs fixed
   ([`87fe5de`](https://github.com/plon-Susk7/verbump/commit/87fe5de00a8d765297f2fe157db4f3d9fff1fc34))
 
-
-## v0.3.6 (2024-12-14)
-
-### Bug Fixes
-
 - Bugs fixed
   ([`e7e602f`](https://github.com/plon-Susk7/verbump/commit/e7e602fc9d807cd4b591337e1a8d96ddcaa0762b))
-
-
-## v0.3.5 (2024-12-14)
-
-
-## v0.3.4 (2024-12-14)
-
-### Bug Fixes
 
 - Bugs fixed
   ([`6a2a4d6`](https://github.com/plon-Susk7/verbump/commit/6a2a4d6ce96d7443a3bc6aa0c90331dd7ac1ff86))
@@ -105,54 +32,50 @@
 - Bugs fixed
   ([`3687c76`](https://github.com/plon-Susk7/verbump/commit/3687c76c2123c0d23a4b3b0d478df9f8a06acad8))
 
-
-## v0.3.3 (2024-12-14)
-
-
-## v0.3.2 (2024-12-14)
-
-### Bug Fixes
-
 - Bugs fixed
   ([`9addc0f`](https://github.com/plon-Susk7/verbump/commit/9addc0fe828dda08a210f8c773098fa98bebb028))
 
 - Bugs fixed
   ([`d188c57`](https://github.com/plon-Susk7/verbump/commit/d188c57e6d6b60f66601bf16eae451c89f530c4e))
 
-
-## v0.3.1 (2024-12-14)
-
-### Bug Fixes
-
 - Bugs fixed
   ([`78f22c0`](https://github.com/plon-Susk7/verbump/commit/78f22c01eb1bf5012c0f2c44380d16fe23494434))
 
+- Changed docs
+  ([`02cfdb6`](https://github.com/plon-Susk7/verbump/commit/02cfdb6e720d9219344b60495c67d916f5075fa0))
 
-## v0.3.0 (2024-12-14)
+- Changed logic for running power
+  ([`8fb9e39`](https://github.com/plon-Susk7/verbump/commit/8fb9e39d3a15e5b63f22791de9775a06445cb5d5))
 
+- Changed power project
+  ([`57d7b9c`](https://github.com/plon-Susk7/verbump/commit/57d7b9c8017e849c6612cd42cfbd222f7c204fb0))
 
-## v0.2.0 (2024-12-14)
+- Changed power project
+  ([`9eb26e7`](https://github.com/plon-Susk7/verbump/commit/9eb26e7663464abdcb72b9c2630867165eba92e9))
 
-### Chores
+- Changes to mod
+  ([`35e39cb`](https://github.com/plon-Susk7/verbump/commit/35e39cb0d534bf5923c01e0d6c210ae3bab2c09b))
 
-- Slight changes
-  ([`438d3e0`](https://github.com/plon-Susk7/verbump/commit/438d3e0f376af3cb605c0c2f7919bc6e790881f0))
+- Fixed
+  ([`668570f`](https://github.com/plon-Susk7/verbump/commit/668570f4d8540ebbe898eb58d0fca0243a20783a))
 
-### Features
+- Fixed docs
+  ([`688ef62`](https://github.com/plon-Susk7/verbump/commit/688ef62bdbd2a3c8a7b47e71f6239e8df2863711))
 
-- Added new feature
-  ([`92829c6`](https://github.com/plon-Susk7/verbump/commit/92829c67bbd7197cd76c12e26c05871bf1f16992))
+- Fixed workflow
+  ([`20af5a4`](https://github.com/plon-Susk7/verbump/commit/20af5a491f26152a037bec463ac6cefd6fec8e20))
 
-- Added new feature
-  ([`ed8f21a`](https://github.com/plon-Susk7/verbump/commit/ed8f21ae54769f5aa168be76d482e501da0543de))
+- Moved project.toml file
+  ([`a65bf11`](https://github.com/plon-Susk7/verbump/commit/a65bf11e9bf0b41fb6fb74ef1001864db8e0f357))
 
-
-## v0.1.0 (2024-12-15)
-
-### Bug Fixes
+- Power fixed
+  ([`e5b80a4`](https://github.com/plon-Susk7/verbump/commit/e5b80a4f029e86f54f45dc8998349667a5116436))
 
 - Resolved bug
   ([`6be53e0`](https://github.com/plon-Susk7/verbump/commit/6be53e0142fd7b3e52c861931b4adeb623c563d6))
+
+- Vhanged file
+  ([`80c9e8a`](https://github.com/plon-Susk7/verbump/commit/80c9e8a85ae4394961840708f3ab8647cb44486d))
 
 ### Chores
 
@@ -231,6 +154,9 @@
 - Readme changes
   ([`69e9d1f`](https://github.com/plon-Susk7/verbump/commit/69e9d1f5da03a84667e5834f653f5d1c03c71df4))
 
+- Slight changes
+  ([`438d3e0`](https://github.com/plon-Susk7/verbump/commit/438d3e0f376af3cb605c0c2f7919bc6e790881f0))
+
 - Something
   ([`d1fafac`](https://github.com/plon-Susk7/verbump/commit/d1faface7df1f03540882c8611e0a98357e98ffb))
 
@@ -253,6 +179,12 @@
 
 - Added changes to m
   ([`9a152a1`](https://github.com/plon-Susk7/verbump/commit/9a152a1029e4a1aa4150b98952f21e172dd7bfe7))
+
+- Added new feature
+  ([`92829c6`](https://github.com/plon-Susk7/verbump/commit/92829c67bbd7197cd76c12e26c05871bf1f16992))
+
+- Added new feature
+  ([`ed8f21a`](https://github.com/plon-Susk7/verbump/commit/ed8f21ae54769f5aa168be76d482e501da0543de))
 
 - Added something
   ([`b325576`](https://github.com/plon-Susk7/verbump/commit/b325576698cec89d78b3add117d66847fe302abe))
