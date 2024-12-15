@@ -1,10 +1,6 @@
 [project]
 name = "modulator"
-<<<<<<< HEAD
-version = "0.1.0"
-=======
 version = "0.1.3"
->>>>>>> 5138c9b8970d8264acd5e3a3e13c602c0c079a62
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
