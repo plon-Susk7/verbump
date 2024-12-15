@@ -68,7 +68,7 @@ jobs:
         if: steps.check_verbump.outputs.has_changes == 'true'
         uses: python-semantic-release/python-semantic-release@v9.12.0
         with:
-          directory: ./verbump
+          directory: ./
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Release modulator
