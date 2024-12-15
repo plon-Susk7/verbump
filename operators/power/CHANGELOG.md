@@ -1,6 +1,33 @@
 # CHANGELOG
 
 
+## v1.2.0 (2024-12-15)
+
+### Bug Fixes
+
+* fix: changes in modulator ([`ba95e9b`](https://github.com/plon-Susk7/verbump/commit/ba95e9bd774ab06ec9396bb43b197de8dd10a50c))
+
+* fix: changed modulator ([`e96151a`](https://github.com/plon-Susk7/verbump/commit/e96151aa58f052d32588db4c9c87289849a74edb))
+
+### Features
+
+* feat: feature in power ([`cac2593`](https://github.com/plon-Susk7/verbump/commit/cac2593b1b06eb4588f7ee1a954118113e159333))
+
+### Unknown
+
+* Merge pull request #8 from plon-Susk7/test
+
+Test ([`05f5f7e`](https://github.com/plon-Susk7/verbump/commit/05f5f7ed2db9ab0db8d128ae60b75391753f8e32))
+
+* fix ([`6b42dc9`](https://github.com/plon-Susk7/verbump/commit/6b42dc9a8fc1e2dd83c02a6337baaf5b3ff7b548))
+
+* fixed workflow ([`063e2c7`](https://github.com/plon-Susk7/verbump/commit/063e2c7422ea4609133693bb34d9b61909ecff1e))
+
+* fix: ([`8f9f0f1`](https://github.com/plon-Susk7/verbump/commit/8f9f0f1325d8decf3f89b1c6518a3128dd773722))
+
+* fixed ([`d8ac664`](https://github.com/plon-Susk7/verbump/commit/d8ac664374da547f5eda4f496d7541785df52646))
+
+
 ## v1.1.3 (2024-12-15)
 
 ### Bug Fixes
