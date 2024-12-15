@@ -1,14 +1,23 @@
 # CHANGELOG
 
 
-<<<<<<< HEAD
-## v0.1.0 (2024-12-15)
+## v0.1.4 (2024-12-15)
 
 ### Bug Fixes
 
-- Bugs fixed
-  ([`98fbc95`](https://github.com/plon-Susk7/verbump/commit/98fbc95881ab543d94355eb0d6198baca9d25bc7))
-=======
+* fix: changed modulator ([`e96151a`](https://github.com/plon-Susk7/verbump/commit/e96151aa58f052d32588db4c9c87289849a74edb))
+
+### Unknown
+
+* fix ([`6b42dc9`](https://github.com/plon-Susk7/verbump/commit/6b42dc9a8fc1e2dd83c02a6337baaf5b3ff7b548))
+
+* fixed workflow ([`063e2c7`](https://github.com/plon-Susk7/verbump/commit/063e2c7422ea4609133693bb34d9b61909ecff1e))
+
+* fix: ([`8f9f0f1`](https://github.com/plon-Susk7/verbump/commit/8f9f0f1325d8decf3f89b1c6518a3128dd773722))
+
+* fixed ([`d8ac664`](https://github.com/plon-Susk7/verbump/commit/d8ac664374da547f5eda4f496d7541785df52646))
+
+
 ## v0.1.3 (2024-12-15)
 
 ### Bug Fixes
@@ -31,286 +40,183 @@
 * fix: changed power project ([`9eb26e7`](https://github.com/plon-Susk7/verbump/commit/9eb26e7663464abdcb72b9c2630867165eba92e9))
 
 * fix: moved project.toml file ([`a65bf11`](https://github.com/plon-Susk7/verbump/commit/a65bf11e9bf0b41fb6fb74ef1001864db8e0f357))
->>>>>>> 5138c9b8970d8264acd5e3a3e13c602c0c079a62
 
-- Bugs fixed
-  ([`9093fd2`](https://github.com/plon-Susk7/verbump/commit/9093fd230d9e04430843e6ec4de1ded6d813b511))
+* fix: changed docs ([`02cfdb6`](https://github.com/plon-Susk7/verbump/commit/02cfdb6e720d9219344b60495c67d916f5075fa0))
 
-- Bugs fixed
-  ([`0c2f8bb`](https://github.com/plon-Susk7/verbump/commit/0c2f8bb9388fec29cf530d195f8c373aacc3b79c))
+* fix: fixed ([`668570f`](https://github.com/plon-Susk7/verbump/commit/668570f4d8540ebbe898eb58d0fca0243a20783a))
 
-- Bugs fixed
-  ([`2b21c7b`](https://github.com/plon-Susk7/verbump/commit/2b21c7bb0c917d46425257abbad71e636e5ae81d))
+* fix: power fixed ([`e5b80a4`](https://github.com/plon-Susk7/verbump/commit/e5b80a4f029e86f54f45dc8998349667a5116436))
 
-- Bugs fixed
-  ([`eb359f0`](https://github.com/plon-Susk7/verbump/commit/eb359f0df59e40bb870a132ebbb7aa4fef978b08))
+* fix: changes to mod ([`35e39cb`](https://github.com/plon-Susk7/verbump/commit/35e39cb0d534bf5923c01e0d6c210ae3bab2c09b))
 
-- Bugs fixed
-  ([`87fe5de`](https://github.com/plon-Susk7/verbump/commit/87fe5de00a8d765297f2fe157db4f3d9fff1fc34))
+* fix: changed logic for running power ([`8fb9e39`](https://github.com/plon-Susk7/verbump/commit/8fb9e39d3a15e5b63f22791de9775a06445cb5d5))
 
-- Bugs fixed
-  ([`e7e602f`](https://github.com/plon-Susk7/verbump/commit/e7e602fc9d807cd4b591337e1a8d96ddcaa0762b))
+* fix: fixed workflow ([`20af5a4`](https://github.com/plon-Susk7/verbump/commit/20af5a491f26152a037bec463ac6cefd6fec8e20))
 
-- Bugs fixed
-  ([`6a2a4d6`](https://github.com/plon-Susk7/verbump/commit/6a2a4d6ce96d7443a3bc6aa0c90331dd7ac1ff86))
+* fix: bugs fixed ([`98fbc95`](https://github.com/plon-Susk7/verbump/commit/98fbc95881ab543d94355eb0d6198baca9d25bc7))
 
-- Bugs fixed
-  ([`3687c76`](https://github.com/plon-Susk7/verbump/commit/3687c76c2123c0d23a4b3b0d478df9f8a06acad8))
+* fix: bugs fixed ([`9093fd2`](https://github.com/plon-Susk7/verbump/commit/9093fd230d9e04430843e6ec4de1ded6d813b511))
 
-- Bugs fixed
-  ([`9addc0f`](https://github.com/plon-Susk7/verbump/commit/9addc0fe828dda08a210f8c773098fa98bebb028))
+* fix: bugs fixed ([`0c2f8bb`](https://github.com/plon-Susk7/verbump/commit/0c2f8bb9388fec29cf530d195f8c373aacc3b79c))
 
-- Bugs fixed
-  ([`d188c57`](https://github.com/plon-Susk7/verbump/commit/d188c57e6d6b60f66601bf16eae451c89f530c4e))
+* fix: bugs fixed ([`2b21c7b`](https://github.com/plon-Susk7/verbump/commit/2b21c7bb0c917d46425257abbad71e636e5ae81d))
 
-- Bugs fixed
-  ([`78f22c0`](https://github.com/plon-Susk7/verbump/commit/78f22c01eb1bf5012c0f2c44380d16fe23494434))
+* fix: bugs fixed ([`eb359f0`](https://github.com/plon-Susk7/verbump/commit/eb359f0df59e40bb870a132ebbb7aa4fef978b08))
 
-- Changed docs
-  ([`02cfdb6`](https://github.com/plon-Susk7/verbump/commit/02cfdb6e720d9219344b60495c67d916f5075fa0))
+* fix: bugs fixed ([`87fe5de`](https://github.com/plon-Susk7/verbump/commit/87fe5de00a8d765297f2fe157db4f3d9fff1fc34))
 
-- Changed logic for running power
-  ([`8fb9e39`](https://github.com/plon-Susk7/verbump/commit/8fb9e39d3a15e5b63f22791de9775a06445cb5d5))
+* fix: bugs fixed ([`e7e602f`](https://github.com/plon-Susk7/verbump/commit/e7e602fc9d807cd4b591337e1a8d96ddcaa0762b))
 
-- Changed power project
-  ([`57d7b9c`](https://github.com/plon-Susk7/verbump/commit/57d7b9c8017e849c6612cd42cfbd222f7c204fb0))
+* fix: bugs fixed ([`6a2a4d6`](https://github.com/plon-Susk7/verbump/commit/6a2a4d6ce96d7443a3bc6aa0c90331dd7ac1ff86))
 
-- Changed power project
-  ([`9eb26e7`](https://github.com/plon-Susk7/verbump/commit/9eb26e7663464abdcb72b9c2630867165eba92e9))
+* fix: bugs fixed ([`3687c76`](https://github.com/plon-Susk7/verbump/commit/3687c76c2123c0d23a4b3b0d478df9f8a06acad8))
 
-- Changes to mod
-  ([`35e39cb`](https://github.com/plon-Susk7/verbump/commit/35e39cb0d534bf5923c01e0d6c210ae3bab2c09b))
+* fix: bugs fixed ([`9addc0f`](https://github.com/plon-Susk7/verbump/commit/9addc0fe828dda08a210f8c773098fa98bebb028))
 
-- Fixed
-  ([`668570f`](https://github.com/plon-Susk7/verbump/commit/668570f4d8540ebbe898eb58d0fca0243a20783a))
+* fix: bugs fixed ([`d188c57`](https://github.com/plon-Susk7/verbump/commit/d188c57e6d6b60f66601bf16eae451c89f530c4e))
 
-- Fixed docs
-  ([`688ef62`](https://github.com/plon-Susk7/verbump/commit/688ef62bdbd2a3c8a7b47e71f6239e8df2863711))
+* fix: bugs fixed ([`78f22c0`](https://github.com/plon-Susk7/verbump/commit/78f22c01eb1bf5012c0f2c44380d16fe23494434))
 
-- Fixed workflow
-  ([`20af5a4`](https://github.com/plon-Susk7/verbump/commit/20af5a491f26152a037bec463ac6cefd6fec8e20))
-
-- Moved project.toml file
-  ([`a65bf11`](https://github.com/plon-Susk7/verbump/commit/a65bf11e9bf0b41fb6fb74ef1001864db8e0f357))
-
-- Power fixed
-  ([`e5b80a4`](https://github.com/plon-Susk7/verbump/commit/e5b80a4f029e86f54f45dc8998349667a5116436))
-
-- Resolved bug
-  ([`6be53e0`](https://github.com/plon-Susk7/verbump/commit/6be53e0142fd7b3e52c861931b4adeb623c563d6))
-
-- Vhanged file
-  ([`80c9e8a`](https://github.com/plon-Susk7/verbump/commit/80c9e8a85ae4394961840708f3ab8647cb44486d))
+* fix: resolved bug ([`6be53e0`](https://github.com/plon-Susk7/verbump/commit/6be53e0142fd7b3e52c861931b4adeb623c563d6))
 
 ### Chores
 
-- Added comments to verbump
-  ([`272b259`](https://github.com/plon-Susk7/verbump/commit/272b259aab2c8c29b5d14dba34f5d03ef2e48584))
+* chore: slight changes ([`438d3e0`](https://github.com/plon-Susk7/verbump/commit/438d3e0f376af3cb605c0c2f7919bc6e790881f0))
 
-- Added something more
-  ([`1f86eb3`](https://github.com/plon-Susk7/verbump/commit/1f86eb32a1a721c90b943001e8bbb94588400559))
+* chore: docs changed ([`6da8529`](https://github.com/plon-Susk7/verbump/commit/6da852986a2a98b9e2488def92c1560303e06e20))
 
-- Bump version to 1.1.1
-  ([`ab87fe8`](https://github.com/plon-Susk7/verbump/commit/ab87fe8545c0105bbdb98a43674917faee18f96c))
+* chore(release): release version ([`5c5af45`](https://github.com/plon-Susk7/verbump/commit/5c5af451027d57d4fc37f58c2c22bbdc0091486b))
 
-- Bump version to 1.1.1
-  ([`ef41226`](https://github.com/plon-Susk7/verbump/commit/ef41226c7c3e2d122f3d65ecdcb8fae4530d3daf))
+* chore: please ([`ea6f2ef`](https://github.com/plon-Susk7/verbump/commit/ea6f2efb430678b2dce7a42d33f91e2e03d81f63))
 
-- Bump version to 1.1.2
-  ([`70edf33`](https://github.com/plon-Susk7/verbump/commit/70edf33fdafe2d5630d429fbbbb9dd833b27009d))
+* chore: something fixed! ([`678e447`](https://github.com/plon-Susk7/verbump/commit/678e4472426a65618e8bd50808ba022598161671))
 
-- Changed documentation
-  ([`794c983`](https://github.com/plon-Susk7/verbump/commit/794c98314b22310c637e439c9095ee86591839a3))
+* chore: please ([`02a72f7`](https://github.com/plon-Susk7/verbump/commit/02a72f7553a7445caa4e0caba099f2f6ca946d4e))
 
-- Changed documentations
-  ([`28c14d7`](https://github.com/plon-Susk7/verbump/commit/28c14d7e76e08ce6a2e62b2e371855e847b31056))
+* chore: minor changes ([`89110f8`](https://github.com/plon-Susk7/verbump/commit/89110f8fe16985d4712486180052feb8dc6787f2))
 
-- Changed pyproject.toml
-  ([`9419ff9`](https://github.com/plon-Susk7/verbump/commit/9419ff95812b35fdd3308d4ecf2bd03c9480efa1))
+* chore: docs change ([`4a771bc`](https://github.com/plon-Susk7/verbump/commit/4a771bc0f600424857ed3b749c2c48af29b07df1))
 
-- Changes to verbump
-  ([`e71bc89`](https://github.com/plon-Susk7/verbump/commit/e71bc898fa345046f6e8e385e8f830bffc20260e))
+* chore: minor change ([`ad43de6`](https://github.com/plon-Susk7/verbump/commit/ad43de6b6b1b1c3bf8066c4180407694630a4a42))
 
-- Docs
-  ([`705f1b8`](https://github.com/plon-Susk7/verbump/commit/705f1b88720b5666c03f9335f54489d2ba3d395a))
+* chore: made changes ([`bd3c620`](https://github.com/plon-Susk7/verbump/commit/bd3c6209798f9056becf5f60d267ebfa5b5360e3))
 
-- Docs change
-  ([`4a771bc`](https://github.com/plon-Susk7/verbump/commit/4a771bc0f600424857ed3b749c2c48af29b07df1))
+* chore: updated ([`884d046`](https://github.com/plon-Susk7/verbump/commit/884d046809bd3bffbfbcfe535defa603570aef33))
 
-- Docs change
-  ([`0c6764c`](https://github.com/plon-Susk7/verbump/commit/0c6764c662efc28f33f922146f632e9cea52411f))
+* chore: docs change ([`0c6764c`](https://github.com/plon-Susk7/verbump/commit/0c6764c662efc28f33f922146f632e9cea52411f))
 
-- Docs changed
-  ([`6da8529`](https://github.com/plon-Susk7/verbump/commit/6da852986a2a98b9e2488def92c1560303e06e20))
+* chore: docs ([`705f1b8`](https://github.com/plon-Susk7/verbump/commit/705f1b88720b5666c03f9335f54489d2ba3d395a))
 
-- Fixing syntax
-  ([`4861eba`](https://github.com/plon-Susk7/verbump/commit/4861ebaffcbec5890d3f51aba2899bf1f2c62366))
+* chore: changed pyproject.toml ([`9419ff9`](https://github.com/plon-Susk7/verbump/commit/9419ff95812b35fdd3308d4ecf2bd03c9480efa1))
 
-- Made changes
-  ([`bd3c620`](https://github.com/plon-Susk7/verbump/commit/bd3c6209798f9056becf5f60d267ebfa5b5360e3))
+* chore: changed documentation ([`794c983`](https://github.com/plon-Susk7/verbump/commit/794c98314b22310c637e439c9095ee86591839a3))
 
-- Made slight changes to verbump
-  ([`4accdf0`](https://github.com/plon-Susk7/verbump/commit/4accdf03f811498dfda251fd5d94c5294768660f))
+* chore: fixing syntax ([`4861eba`](https://github.com/plon-Susk7/verbump/commit/4861ebaffcbec5890d3f51aba2899bf1f2c62366))
 
-- Minor change
-  ([`ad43de6`](https://github.com/plon-Susk7/verbump/commit/ad43de6b6b1b1c3bf8066c4180407694630a4a42))
+* chore: bump version to 1.1.2 ([`70edf33`](https://github.com/plon-Susk7/verbump/commit/70edf33fdafe2d5630d429fbbbb9dd833b27009d))
 
-- Minor changes
-  ([`89110f8`](https://github.com/plon-Susk7/verbump/commit/89110f8fe16985d4712486180052feb8dc6787f2))
+* chore: bump version to 1.1.1 ([`ab87fe8`](https://github.com/plon-Susk7/verbump/commit/ab87fe8545c0105bbdb98a43674917faee18f96c))
 
-- Minor changes
-  ([`821d5e5`](https://github.com/plon-Susk7/verbump/commit/821d5e55f68c9aab840aa5b0d3a216ca2f71b28d))
+* chore: minor changes to power ([`29e6289`](https://github.com/plon-Susk7/verbump/commit/29e628928397d3125c9a18f3fd83aee6d7a55521))
 
-- Minor changes to modulator
-  ([`af344f6`](https://github.com/plon-Susk7/verbump/commit/af344f6800932c6ea6ebc5581b341dc1183b96b9))
+* chore: minor changes ([`821d5e5`](https://github.com/plon-Susk7/verbump/commit/821d5e55f68c9aab840aa5b0d3a216ca2f71b28d))
 
-- Minor changes to power
-  ([`29e6289`](https://github.com/plon-Susk7/verbump/commit/29e628928397d3125c9a18f3fd83aee6d7a55521))
+* chore: bump version to 1.1.1 ([`ef41226`](https://github.com/plon-Susk7/verbump/commit/ef41226c7c3e2d122f3d65ecdcb8fae4530d3daf))
 
-- Minor changes to power
-  ([`411847f`](https://github.com/plon-Susk7/verbump/commit/411847f470ca9cbeadc08d364058e2b11254ce6a))
+* chore: README changes ([`69e9d1f`](https://github.com/plon-Susk7/verbump/commit/69e9d1f5da03a84667e5834f653f5d1c03c71df4))
 
-- Please
-  ([`ea6f2ef`](https://github.com/plon-Susk7/verbump/commit/ea6f2efb430678b2dce7a42d33f91e2e03d81f63))
+* chore: something ([`d1fafac`](https://github.com/plon-Susk7/verbump/commit/d1faface7df1f03540882c8611e0a98357e98ffb))
 
-- Please
-  ([`02a72f7`](https://github.com/plon-Susk7/verbump/commit/02a72f7553a7445caa4e0caba099f2f6ca946d4e))
+* chore: what is ([`3eab620`](https://github.com/plon-Susk7/verbump/commit/3eab620edadef2e4215ddf784d4dcad486b8a9f8))
 
-- Readme changes
-  ([`69e9d1f`](https://github.com/plon-Susk7/verbump/commit/69e9d1f5da03a84667e5834f653f5d1c03c71df4))
+* chore: made slight changes to verbump ([`4accdf0`](https://github.com/plon-Susk7/verbump/commit/4accdf03f811498dfda251fd5d94c5294768660f))
 
-- Slight changes
-  ([`438d3e0`](https://github.com/plon-Susk7/verbump/commit/438d3e0f376af3cb605c0c2f7919bc6e790881f0))
+* chore: changes to verbump ([`e71bc89`](https://github.com/plon-Susk7/verbump/commit/e71bc898fa345046f6e8e385e8f830bffc20260e))
 
-- Something
-  ([`d1fafac`](https://github.com/plon-Susk7/verbump/commit/d1faface7df1f03540882c8611e0a98357e98ffb))
+* chore: added something more ([`1f86eb3`](https://github.com/plon-Susk7/verbump/commit/1f86eb32a1a721c90b943001e8bbb94588400559))
 
-- Something fixed!
-  ([`678e447`](https://github.com/plon-Susk7/verbump/commit/678e4472426a65618e8bd50808ba022598161671))
+* chore: added comments to verbump ([`272b259`](https://github.com/plon-Susk7/verbump/commit/272b259aab2c8c29b5d14dba34f5d03ef2e48584))
 
-- Updated
-  ([`884d046`](https://github.com/plon-Susk7/verbump/commit/884d046809bd3bffbfbcfe535defa603570aef33))
+* chore: minor changes to power ([`411847f`](https://github.com/plon-Susk7/verbump/commit/411847f470ca9cbeadc08d364058e2b11254ce6a))
 
-- What is
-  ([`3eab620`](https://github.com/plon-Susk7/verbump/commit/3eab620edadef2e4215ddf784d4dcad486b8a9f8))
+* chore: minor changes to modulator ([`af344f6`](https://github.com/plon-Susk7/verbump/commit/af344f6800932c6ea6ebc5581b341dc1183b96b9))
 
-- **release**: Release version
-  ([`5c5af45`](https://github.com/plon-Susk7/verbump/commit/5c5af451027d57d4fc37f58c2c22bbdc0091486b))
+* chore: changed documentations ([`28c14d7`](https://github.com/plon-Susk7/verbump/commit/28c14d7e76e08ce6a2e62b2e371855e847b31056))
 
 ### Features
 
-- Add a new feature to modulator
-  ([`7fcad60`](https://github.com/plon-Susk7/verbump/commit/7fcad603de71f8967afd45fbbeeceb4571e6c4b7))
+* feat: added new feature ([`92829c6`](https://github.com/plon-Susk7/verbump/commit/92829c67bbd7197cd76c12e26c05871bf1f16992))
 
-- Added changes to m
-  ([`9a152a1`](https://github.com/plon-Susk7/verbump/commit/9a152a1029e4a1aa4150b98952f21e172dd7bfe7))
+* feat: added new feature ([`ed8f21a`](https://github.com/plon-Susk7/verbump/commit/ed8f21ae54769f5aa168be76d482e501da0543de))
 
-- Added new feature
-  ([`92829c6`](https://github.com/plon-Susk7/verbump/commit/92829c67bbd7197cd76c12e26c05871bf1f16992))
+* feat: new feature ([`11a8a5d`](https://github.com/plon-Susk7/verbump/commit/11a8a5d59fec438187d60b2fb030ae67ae63dacd))
 
-- Added new feature
-  ([`ed8f21a`](https://github.com/plon-Susk7/verbump/commit/ed8f21ae54769f5aa168be76d482e501da0543de))
+* feat: fixed error ([`5024b54`](https://github.com/plon-Susk7/verbump/commit/5024b54febc0ff7fe95bec05a5371149f629352c))
 
-- Added something
-  ([`b325576`](https://github.com/plon-Susk7/verbump/commit/b325576698cec89d78b3add117d66847fe302abe))
+* feat: feature ([`6a87fe7`](https://github.com/plon-Susk7/verbump/commit/6a87fe756fa2e1ae6d1d0a8cc16c982f0cd525ea))
 
-- Added something to script
-  ([`6b54de5`](https://github.com/plon-Susk7/verbump/commit/6b54de57889b94e0847bba9db09a391ed71eb351))
+* feat: workflow chanage ([`fd51465`](https://github.com/plon-Susk7/verbump/commit/fd5146576e5452128bb113005b041149f9d9731b))
 
-- Added something to script
-  ([`61348b5`](https://github.com/plon-Susk7/verbump/commit/61348b5795d5f4f6d78a7961b5142761d2a13d01))
+* feat: someting ([`827ed33`](https://github.com/plon-Susk7/verbump/commit/827ed332d3b7726ca7954a22eea08740478e464d))
 
-- Added something to script
-  ([`5f0ebbf`](https://github.com/plon-Susk7/verbump/commit/5f0ebbfb18ff43eec1d6b0d4d14b1d03f4285913))
+* feat: lll ([`5fadc22`](https://github.com/plon-Susk7/verbump/commit/5fadc22baac800728ff209a662cd09bfc872116b))
 
-- Changed workflow
-  ([`b8b55df`](https://github.com/plon-Susk7/verbump/commit/b8b55df214acc80bd9df452b7bdbdd27a2046ec2))
+* feat: minor change ([`59aa57a`](https://github.com/plon-Susk7/verbump/commit/59aa57a2ef3047698d0a65241e71f610e00eedf3))
 
-- Changed workflow
-  ([`18a8905`](https://github.com/plon-Susk7/verbump/commit/18a89058cc7eab2840eff871d5724245f555f514))
+* feat: minor change ([`55450c6`](https://github.com/plon-Susk7/verbump/commit/55450c65090f09d1c8b6016e1dbb869e08f38c18))
 
-- Changed workflow
-  ([`b21c792`](https://github.com/plon-Susk7/verbump/commit/b21c79279930cfd8728e6cef0072473f7366867f))
+* feat: docs changesd! ([`2172f59`](https://github.com/plon-Susk7/verbump/commit/2172f59a5de1cad59577977a5cd2943dda644581))
 
-- Changed workflow
-  ([`4094662`](https://github.com/plon-Susk7/verbump/commit/4094662ed9ed867c1efec14dbe0bab77a2d36303))
+* feat: major change ([`513b796`](https://github.com/plon-Susk7/verbump/commit/513b7964ddb9b81e7436aa175f2fd0f0503d2008))
 
-- Changed workflow
-  ([`5b7e311`](https://github.com/plon-Susk7/verbump/commit/5b7e31157b0f019fdfa33548791553410aa8e792))
+* feat: add a new feature to modulator ([`7fcad60`](https://github.com/plon-Susk7/verbump/commit/7fcad603de71f8967afd45fbbeeceb4571e6c4b7))
 
-- Changed workflow
-  ([`e7db7ca`](https://github.com/plon-Susk7/verbump/commit/e7db7ca94caaa8e1735f3112208f980eb549bf96))
+* feat: major change ([`b828c54`](https://github.com/plon-Susk7/verbump/commit/b828c54d60017161cbc8295c937b02645572ec04))
 
-- Changes to modulator
-  ([`61fd9db`](https://github.com/plon-Susk7/verbump/commit/61fd9db52b80f7da336b7c9d20c74b8738f5df8e))
+* feat: made multiple changes ([`4838041`](https://github.com/plon-Susk7/verbump/commit/48380417467ed44696fcc24bc536a549cba0cb28))
 
-- Changes to power
-  ([`4c3eadd`](https://github.com/plon-Susk7/verbump/commit/4c3eaddd47d1cc89b305a7fd177ff62b020e5671))
+* feat: major change ([`cf93e14`](https://github.com/plon-Susk7/verbump/commit/cf93e14b6fc659432a596a5ac3076e7e5935468f))
 
-- Docs changesd!
-  ([`2172f59`](https://github.com/plon-Susk7/verbump/commit/2172f59a5de1cad59577977a5cd2943dda644581))
+* feat: major change ([`1cbf31a`](https://github.com/plon-Susk7/verbump/commit/1cbf31af79c6f0579d8e7ede7e1f58acd28603fa))
 
-- Feature
-  ([`6a87fe7`](https://github.com/plon-Susk7/verbump/commit/6a87fe756fa2e1ae6d1d0a8cc16c982f0cd525ea))
+* feat: added something to script ([`6b54de5`](https://github.com/plon-Susk7/verbump/commit/6b54de57889b94e0847bba9db09a391ed71eb351))
 
-- Fixed error
-  ([`5024b54`](https://github.com/plon-Susk7/verbump/commit/5024b54febc0ff7fe95bec05a5371149f629352c))
+* feat: added something to script ([`61348b5`](https://github.com/plon-Susk7/verbump/commit/61348b5795d5f4f6d78a7961b5142761d2a13d01))
 
-- Lll
-  ([`5fadc22`](https://github.com/plon-Susk7/verbump/commit/5fadc22baac800728ff209a662cd09bfc872116b))
+* feat: added something to script ([`5f0ebbf`](https://github.com/plon-Susk7/verbump/commit/5f0ebbfb18ff43eec1d6b0d4d14b1d03f4285913))
 
-- Made changes to power
-  ([`c8342ae`](https://github.com/plon-Susk7/verbump/commit/c8342aef35a3bf38d39dc94ccf797568cf84aab9))
+* feat: new script ([`49aed03`](https://github.com/plon-Susk7/verbump/commit/49aed037fa9b255e0cb02570551b1e9465276e3e))
 
-- Made multiple changes
-  ([`4838041`](https://github.com/plon-Susk7/verbump/commit/48380417467ed44696fcc24bc536a549cba0cb28))
+* feat: new script ([`c44d003`](https://github.com/plon-Susk7/verbump/commit/c44d003c2cba8c1202100c5be79f14e8d3a8c319))
 
-- Major change
-  ([`513b796`](https://github.com/plon-Susk7/verbump/commit/513b7964ddb9b81e7436aa175f2fd0f0503d2008))
+* feat: updated file ([`9d67d6c`](https://github.com/plon-Susk7/verbump/commit/9d67d6c6b8b4cee6a7d6e0f7de86df71bfc23c08))
 
-- Major change
-  ([`b828c54`](https://github.com/plon-Susk7/verbump/commit/b828c54d60017161cbc8295c937b02645572ec04))
+* feat: updated file ([`ea27570`](https://github.com/plon-Susk7/verbump/commit/ea27570b5951202cfef95077821f5d852e835a87))
 
-- Major change
-  ([`cf93e14`](https://github.com/plon-Susk7/verbump/commit/cf93e14b6fc659432a596a5ac3076e7e5935468f))
+* feat: updated file ([`122fa02`](https://github.com/plon-Susk7/verbump/commit/122fa0281da46e8f39002064a1a4e2e408d21a35))
 
-- Major change
-  ([`1cbf31a`](https://github.com/plon-Susk7/verbump/commit/1cbf31af79c6f0579d8e7ede7e1f58acd28603fa))
+* feat: updated file ([`86e86dc`](https://github.com/plon-Susk7/verbump/commit/86e86dc979477d2a7991ba75447031e6c8f2c384))
 
-- Minor change
-  ([`59aa57a`](https://github.com/plon-Susk7/verbump/commit/59aa57a2ef3047698d0a65241e71f610e00eedf3))
+* feat: made changes to power ([`c8342ae`](https://github.com/plon-Susk7/verbump/commit/c8342aef35a3bf38d39dc94ccf797568cf84aab9))
 
-- Minor change
-  ([`55450c6`](https://github.com/plon-Susk7/verbump/commit/55450c65090f09d1c8b6016e1dbb869e08f38c18))
+* feat: added changes to m ([`9a152a1`](https://github.com/plon-Susk7/verbump/commit/9a152a1029e4a1aa4150b98952f21e172dd7bfe7))
 
-- New feature
-  ([`11a8a5d`](https://github.com/plon-Susk7/verbump/commit/11a8a5d59fec438187d60b2fb030ae67ae63dacd))
+* feat: changes to modulator ([`61fd9db`](https://github.com/plon-Susk7/verbump/commit/61fd9db52b80f7da336b7c9d20c74b8738f5df8e))
 
-- New script
-  ([`49aed03`](https://github.com/plon-Susk7/verbump/commit/49aed037fa9b255e0cb02570551b1e9465276e3e))
+* feat: changes to power ([`4c3eadd`](https://github.com/plon-Susk7/verbump/commit/4c3eaddd47d1cc89b305a7fd177ff62b020e5671))
 
-- New script
-  ([`c44d003`](https://github.com/plon-Susk7/verbump/commit/c44d003c2cba8c1202100c5be79f14e8d3a8c319))
+* feat: added something ([`b325576`](https://github.com/plon-Susk7/verbump/commit/b325576698cec89d78b3add117d66847fe302abe))
 
-- Someting
-  ([`827ed33`](https://github.com/plon-Susk7/verbump/commit/827ed332d3b7726ca7954a22eea08740478e464d))
+* feat: changed workflow ([`b8b55df`](https://github.com/plon-Susk7/verbump/commit/b8b55df214acc80bd9df452b7bdbdd27a2046ec2))
 
-- Updated file
-  ([`9d67d6c`](https://github.com/plon-Susk7/verbump/commit/9d67d6c6b8b4cee6a7d6e0f7de86df71bfc23c08))
+* feat: changed workflow ([`18a8905`](https://github.com/plon-Susk7/verbump/commit/18a89058cc7eab2840eff871d5724245f555f514))
 
-- Updated file
-  ([`ea27570`](https://github.com/plon-Susk7/verbump/commit/ea27570b5951202cfef95077821f5d852e835a87))
+* feat: changed workflow ([`b21c792`](https://github.com/plon-Susk7/verbump/commit/b21c79279930cfd8728e6cef0072473f7366867f))
 
-- Updated file
-  ([`122fa02`](https://github.com/plon-Susk7/verbump/commit/122fa0281da46e8f39002064a1a4e2e408d21a35))
+* feat: changed workflow ([`4094662`](https://github.com/plon-Susk7/verbump/commit/4094662ed9ed867c1efec14dbe0bab77a2d36303))
 
-- Updated file
-  ([`86e86dc`](https://github.com/plon-Susk7/verbump/commit/86e86dc979477d2a7991ba75447031e6c8f2c384))
+* feat: changed workflow ([`5b7e311`](https://github.com/plon-Susk7/verbump/commit/5b7e31157b0f019fdfa33548791553410aa8e792))
 
-<<<<<<< HEAD
-- Workflow chanage
-  ([`fd51465`](https://github.com/plon-Susk7/verbump/commit/fd5146576e5452128bb113005b041149f9d9731b))
-=======
 * feat: changed workflow ([`e7db7ca`](https://github.com/plon-Susk7/verbump/commit/e7db7ca94caaa8e1735f3112208f980eb549bf96))
 
 ### Unknown
@@ -452,4 +358,3 @@ chore: changed documentations ([`dbb702f`](https://github.com/plon-Susk7/verbump
 * uv basic setup ([`6af4c20`](https://github.com/plon-Susk7/verbump/commit/6af4c208238ef0c184ae74d0c60f00c2e89f3ded))
 
 * basic uv structure ([`7fa423c`](https://github.com/plon-Susk7/verbump/commit/7fa423c9576efc1405c25d8d598e95828ff1c717))
->>>>>>> 5138c9b8970d8264acd5e3a3e13c602c0c079a62
