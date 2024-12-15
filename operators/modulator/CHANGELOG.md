@@ -1,27 +1,26 @@
 # CHANGELOG
 
 
+## v0.1.3 (2024-12-15)
+
+### Bug Fixes
+
+* fix: vhanged file ([`80c9e8a`](https://github.com/plon-Susk7/verbump/commit/80c9e8a85ae4394961840708f3ab8647cb44486d))
+
+### Unknown
+
+* fixed ([`4c3c1df`](https://github.com/plon-Susk7/verbump/commit/4c3c1df1bbcc5641be020b1dcdaea5d2da6c2e88))
+
+
 ## v0.1.2 (2024-12-15)
 
 ### Bug Fixes
 
+* fix: fixed docs ([`688ef62`](https://github.com/plon-Susk7/verbump/commit/688ef62bdbd2a3c8a7b47e71f6239e8df2863711))
+
 * fix: changed power project ([`57d7b9c`](https://github.com/plon-Susk7/verbump/commit/57d7b9c8017e849c6612cd42cfbd222f7c204fb0))
 
-### Unknown
-
-* workflow fix ([`abe1d59`](https://github.com/plon-Susk7/verbump/commit/abe1d59f2fca6a5a054df5f964dac5815fcb9d9e))
-
-
-## v0.1.1 (2024-12-15)
-
-### Bug Fixes
-
 * fix: changed power project ([`9eb26e7`](https://github.com/plon-Susk7/verbump/commit/9eb26e7663464abdcb72b9c2630867165eba92e9))
-
-
-## v0.1.0 (2024-12-15)
-
-### Bug Fixes
 
 * fix: moved project.toml file ([`a65bf11`](https://github.com/plon-Susk7/verbump/commit/a65bf11e9bf0b41fb6fb74ef1001864db8e0f357))
 
@@ -204,6 +203,10 @@
 * feat: changed workflow ([`e7db7ca`](https://github.com/plon-Susk7/verbump/commit/e7db7ca94caaa8e1735f3112208f980eb549bf96))
 
 ### Unknown
+
+* fixed few things ([`cafe448`](https://github.com/plon-Susk7/verbump/commit/cafe44855e4587e4c1285a33235ffbded2100529))
+
+* workflow fix ([`abe1d59`](https://github.com/plon-Susk7/verbump/commit/abe1d59f2fca6a5a054df5f964dac5815fcb9d9e))
 
 * changes to workflow ([`93bf9dd`](https://github.com/plon-Susk7/verbump/commit/93bf9ddecd348d0ba6b68525ec120403b3503339))
 
