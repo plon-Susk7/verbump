@@ -1,6 +1,13 @@
 # CHANGELOG
 
 
+## v0.1.1 (2024-12-15)
+
+### Bug Fixes
+
+* fix: changed power project ([`9eb26e7`](https://github.com/plon-Susk7/verbump/commit/9eb26e7663464abdcb72b9c2630867165eba92e9))
+
+
 ## v0.1.0 (2024-12-15)
 
 ### Bug Fixes
