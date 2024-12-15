@@ -1,6 +1,13 @@
 # CHANGELOG
 
 
+## v0.3.14 (2024-12-15)
+
+### Bug Fixes
+
+* fix: changed logic for running power ([`8fb9e39`](https://github.com/plon-Susk7/verbump/commit/8fb9e39d3a15e5b63f22791de9775a06445cb5d5))
+
+
 ## v0.3.13 (2024-12-15)
 
 ### Bug Fixes
