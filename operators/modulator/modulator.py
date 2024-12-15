@@ -17,4 +17,4 @@ class Modulator:
 
 ## Modulator is useless without aasdsadas
 # Need to make a major change!
-#### minor changes here!
+#### minor changes here! Minor fix here and there!
