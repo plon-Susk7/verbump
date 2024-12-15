@@ -26,6 +26,7 @@ members = ["operators/modulator", "operators/power"]
 version_variable = ["pyproject.toml:project.version"]
 version_toml = ["pyproject.toml:project.version"]
 branch = "main"
+tag_format = "verbump-{version}"
 
 [tool.semantic_release.branches.main]
 match = "main"
