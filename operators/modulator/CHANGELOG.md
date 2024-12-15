@@ -1,6 +1,23 @@
 # CHANGELOG
 
 
+## v0.2.0 (2024-12-15)
+
+### Bug Fixes
+
+* fix: changes in modulator ([`ba95e9b`](https://github.com/plon-Susk7/verbump/commit/ba95e9bd774ab06ec9396bb43b197de8dd10a50c))
+
+### Features
+
+* feat: feature in power ([`cac2593`](https://github.com/plon-Susk7/verbump/commit/cac2593b1b06eb4588f7ee1a954118113e159333))
+
+### Unknown
+
+* Merge pull request #8 from plon-Susk7/test
+
+Test ([`05f5f7e`](https://github.com/plon-Susk7/verbump/commit/05f5f7ed2db9ab0db8d128ae60b75391753f8e32))
+
+
 ## v0.1.4 (2024-12-15)
 
 ### Bug Fixes
