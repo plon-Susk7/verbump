@@ -1,11 +1,20 @@
 # CHANGELOG
 
 
-## v0.1.0 (2024-12-15)
+## v1.1.3 (2024-12-15)
 
 ### Bug Fixes
 
 * fix: vhanged file ([`80c9e8a`](https://github.com/plon-Susk7/verbump/commit/80c9e8a85ae4394961840708f3ab8647cb44486d))
+
+### Unknown
+
+* fixed ([`4c3c1df`](https://github.com/plon-Susk7/verbump/commit/4c3c1df1bbcc5641be020b1dcdaea5d2da6c2e88))
+
+
+## v1.1.2 (2024-12-15)
+
+### Bug Fixes
 
 * fix: fixed docs ([`688ef62`](https://github.com/plon-Susk7/verbump/commit/688ef62bdbd2a3c8a7b47e71f6239e8df2863711))
 
@@ -194,8 +203,6 @@
 * feat: changed workflow ([`e7db7ca`](https://github.com/plon-Susk7/verbump/commit/e7db7ca94caaa8e1735f3112208f980eb549bf96))
 
 ### Unknown
-
-* fixed ([`4c3c1df`](https://github.com/plon-Susk7/verbump/commit/4c3c1df1bbcc5641be020b1dcdaea5d2da6c2e88))
 
 * fixed few things ([`cafe448`](https://github.com/plon-Susk7/verbump/commit/cafe44855e4587e4c1285a33235ffbded2100529))
 
