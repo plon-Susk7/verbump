@@ -31,7 +31,7 @@ jobs:
       - name: Release main project
         uses: python-semantic-release/python-semantic-release@v9.12.0
         with:
-          directory: ./
+          directory: ./verbump
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Release modulator
