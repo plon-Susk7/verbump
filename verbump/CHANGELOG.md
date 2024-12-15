@@ -1,6 +1,34 @@
 # CHANGELOG
 
 
+## v0.3.17 (2024-12-15)
+
+### Bug Fixes
+
+* fix: changed docs ([`02cfdb6`](https://github.com/plon-Susk7/verbump/commit/02cfdb6e720d9219344b60495c67d916f5075fa0))
+
+### Unknown
+
+* changes to workflow ([`93bf9dd`](https://github.com/plon-Susk7/verbump/commit/93bf9ddecd348d0ba6b68525ec120403b3503339))
+
+
+## v0.3.16 (2024-12-15)
+
+### Bug Fixes
+
+* fix: fixed ([`668570f`](https://github.com/plon-Susk7/verbump/commit/668570f4d8540ebbe898eb58d0fca0243a20783a))
+
+* fix: power fixed ([`e5b80a4`](https://github.com/plon-Susk7/verbump/commit/e5b80a4f029e86f54f45dc8998349667a5116436))
+
+### Unknown
+
+* fixed workflow ([`fb04268`](https://github.com/plon-Susk7/verbump/commit/fb042689f984fb015701a31f32429334ac375534))
+
+* fix ([`dda1683`](https://github.com/plon-Susk7/verbump/commit/dda168329f88ac158c1b8c1d347e39f1fab28e31))
+
+* Merge branch 'main' of github.com:plon-Susk7/verbump ([`1f4eef6`](https://github.com/plon-Susk7/verbump/commit/1f4eef696c3d9667b9a787c01e53ebffb24fd8ac))
+
+
 ## v0.3.15 (2024-12-15)
 
 ### Bug Fixes
@@ -8,6 +36,8 @@
 * fix: changes to mod ([`35e39cb`](https://github.com/plon-Susk7/verbump/commit/35e39cb0d534bf5923c01e0d6c210ae3bab2c09b))
 
 ### Unknown
+
+* workflow fix ([`6c1aace`](https://github.com/plon-Susk7/verbump/commit/6c1aace640b0f49df9e4182039348b40c5e9e77c))
 
 * Merge branch 'main' of github.com:plon-Susk7/verbump ([`1327842`](https://github.com/plon-Susk7/verbump/commit/1327842f7a13db264f7fead2e9aa8ae633c535ba))
 
