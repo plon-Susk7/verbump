@@ -13,5 +13,3 @@ class Power:
 
     def __repr__(self):
         return str(self.power())
-
-#### Change the version here!
