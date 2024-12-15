@@ -33,21 +33,18 @@ jobs:
         with:
           directory: ./operators/modulator
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          root_options: "--tag-format modulator-{version}"
 
       - name: Release main project
         uses: python-semantic-release/python-semantic-release@v9.12.0
         with:
           directory: ./verbump
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          root_options: "--tag-format verbump-{version}"
 
       - name: Release main power
         uses: python-semantic-release/python-semantic-release@v9.12.0
         with:
           directory: ./operators/power
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          root_options: "--tag-format power-{version}"
 
       # - name: Debug version bump in main project
       #   working-directory: ./
