@@ -10,8 +10,10 @@ name = "priyash7"
 email = "priyashshah4@gmail.com"
 
 [tool.semantic_release]
-version_variable = "pyproject.toml:version"
-bump_version = true
+version_variable = ["pyproject.toml:project.version"]
+version_toml = ["pyproject.toml:project.version"]
+branch = "main"
+
 
 [build-system]
 requires = [ "hatchling",]
