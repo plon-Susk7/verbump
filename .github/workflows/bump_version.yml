@@ -27,23 +27,44 @@ jobs:
       - name: Install semantic-release
         run: |
           pip install python-semantic-release
-      - name: Debug version bump in main project
-        working-directory: ./verbump
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          semantic-release -vv version 
-      - name: Bump version in operator1 project
-        working-directory: ./operators/modulator
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          semantic-release version 
-          cat pyproject.toml
-      - name: Bump version in operator2 project
-        working-directory: ./operators/power
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          semantic-release version 
-          cat pyproject.toml
+
+      - name: Release main project
+        uses: python-semantic-release/python-semantic-release@v9.12.0
+        with:
+          directory: ./
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Release modulator
+        uses: python-semantic-release/python-semantic-release@v9.12.0
+        with:
+          directory: ./operators/modulator
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Release main power
+        uses: python-semantic-release/python-semantic-release@v9.12.0
+        with:
+          directory: ./operators/power
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      # - name: Debug version bump in main project
+      #   working-directory: ./
+      #   env:
+      #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: |
+      #     semantic-release -vv version 
+
+      # - name: Bump version in operator1 project
+      #   working-directory: ./operators/modulator
+      #   env:
+      #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: |
+      #     semantic-release version 
+      #     cat pyproject.toml
+
+      # - name: Bump version in operator2 project
+      #   working-directory: ./operators/power
+      #   env:
+      #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: |
+      #     semantic-release version 
+      #     cat pyproject.toml
